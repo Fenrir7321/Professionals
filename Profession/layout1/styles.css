@@ -1,0 +1,133 @@
+body {
+    font-family: 'Epilogue', sans-serif;
+    background: #FFFFFF;
+    color: #2D2D2D;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ШАПКА */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    padding: 24px 42px;
+    gap: 24px;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* КОНТЕНТ */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 42px 24px;
+    gap: 42px 68px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+p {
+    width: 450px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 64px;
+    gap: 10px;
+    width: 211px;
+    height: 78px;
+    background: #2D2D2D;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.photo {
+    width: 480px;
+    min-width: 320px;
+    max-width: 480px;
+    height: 360px;
+}
+
+/* ЛОГОТИПЫ */
+.logo-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    padding: 42px 68px;
+    gap: 68px 86px;
+}
+
+.logo-bar img {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.8;
+}

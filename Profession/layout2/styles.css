@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Или подключи Google Font, если хочешь круче */
+    background: linear-gradient(to bottom, #f0f8ff, #ffffff); /* Светлый градиент как на скрине */
+    color: #333;
+    overflow-x: hidden;
+}
+
+#bgi {
+    position: absolute;
+    width: 1456px;
+    height: 948px;
+    left: 0px;
+    top: -17px;
+}
+
+article {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* === HEAD === */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    position: relative;
+    z-index: 10;
+
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00bfa5; /* Teal как в логотипе */
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 540px;
+}
+
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.header__nav li {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.header__nav li:hover {
+    color: #00bfa5;
+}
+
+.header__reg {
+    display: flex;
+    gap: 15px;
+}
+
+.header__reg a {
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.header__reg a:first-child {
+    color: #313131;
+}
+
+.header__reg a:first-child:hover {
+    background: #009688;
+}
+
+.header__reg a:last-child {
+    color: #25A4AD;
+    border: 1px solid #25A4AD;
+}
+
+.header__reg a:last-child:hover {
+    background: #25A4AD;
+    color: white;
+}
+
+
+/* === CONTENT === */
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 120px 50px 50px;
+    min-height: 80vh;
+    gap: 190px;
+}
+
+.content__block {
+    position: relative;
+    left: 50px;
+    top: -40px;
+}
+
+.content h1 {
+    font-size: 95px;
+    line-height: 1;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content h1 br {
+    display: block;
+}
+
+.content h1 span:nth-child(3) { /* WEB Services в teal */
+    color: #25A4AD;
+    display: block;
+    font-size: 90px;
+}
+
+.content__text {
+    font-size: 18px;
+    color: #666;
+    max-width: 426px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.content__start {
+    background: #00bfa5;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: background 0.3s;
+}
+
+.content__start:hover {
+    background: #009688;
+}
+
+.content__search {
+    background: transparent;
+    color: #00bfa5;
+    border: 1px solid #00bfa5;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.content__search:hover {
+    background: #00bfa5;
+    color: white;
+}
+
+.content__image {
+    position: relative;
+    width: 500px;
+    height: 700px;
+}
+
+.content__image-girl {
+    position: absolute;
+    top: -155px;
+    right: 45px;
+    width: 501px;
+    z-index: 5;
+}
+
+.content__image-arch {
+    position: absolute;
+    top: -13px;
+    right: 40px;
+    width: 530px;
+    z-index: 1;
+}
+
+.content__image-arrow {
+    position: absolute;
+    top: 0;
+    left: -325px;
+    width: 300px;
+    z-index: 3;
+}
+
+.content__image-line {
+    position: absolute;
+    bottom: -75px;
+    left: -50px;
+    width: 530px;
+    z-index: 2;
+}
+
+/* Абстрактные шейпы как на скрине (добавь в HTML если нет, или используй ::before) */
+.content::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+    background: #ffd54f;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+    width: 80px;
+    height: 80px;
+    background: #d7ccc8;
+    border-radius: 50% 0 50% 50%;
+    z-index: 0;
+}
+
+/* Анимация для стрелки */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+
+/* === LOGOS === */
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background: #f8f9fa;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    height: 40px;
+    filter: grayscale(100%); /* Как на скрине, серые */
+    transition: filter 0.3s;
+}
+
+.logos img:hover {
+    filter: grayscale(0%);
+}
