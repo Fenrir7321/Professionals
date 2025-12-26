@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestGames</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <!-- ЛОГОТИП -->
+            <img class="header__logo" src="/img/logo.png" alt="logo">
+            
+            <!-- НАВИГАЦИЯ -->
+            <!-- Бургер-меню -->
+            <nav class="nav">
+                <button class="nav__burger" aria-label="Меню">
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                    <span class="nav__burger-line"></span>
+                </button>
+
+                <!-- Меню навигации -->
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#search" class="nav__link">Поиск</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="login.html" class="nav__link">Войти</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="catalog.html" class="nav__link">Каталог игр</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="slider">
+        <h2 class="slider__title">Новинки</h2>
+        
+        <div class="slider__wrapper">
+            <!-- СЛАЙД 1 -->
+            <div class="slider__slide slider__slide--active">
+                <img class="slider__image" src="/img/slides/slide1.png" alt="Skate Story">
+                <div class="slider__content">
+                    <h3 class="slider__game-title">Skate Story</h3>
+                    <p class="slider__price">780 ₽</p>
+                    <a href="catalog.html" class="slider__button">Подробнее</a>
+                </div>
+            </div>
+
+            <!-- СЛАЙД 2 -->
+            <div class="slider__slide">
+                <img class="slider__image" src="/img/slides/slide2.png" alt="slide2">
+                <div class="slider__content">
+                    <h3 class="slider__game-title">ROUTINE</h3>
+                    <p class="slider__price">960 ₽</p>
+                    <a href="catalog.html" class="slider__button">Подробнее</a>
+                </div>
+            </div>
+
+            <!-- СЛАЙД 3 -->
+            <div class="slider__slide">
+                <img class="slider__image" src="/img/slides/slide3.png" alt="slide3">
+                <div class="slider__content">
+                    <h3 class="slider__game-title">MARVEL Cosmic Invasion</h3>
+                    <p class="slider__price">1575 ₽</p>
+                    <a href="catalog.html" class="slider__button">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+                <div class="slider__indicators">
+            <span class="slider__indicator slider__indicator--active"></span>
+            <span class="slider__indicator"></span>
+            <span class="slider__indicator"></span>
+        </div>
+
+        <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий слайд"></button>
+        <button class="slider__arrow slider__arrow--next" aria-label="Следующий слайд"></button>
+        </section>
+
+        <!-- ПОИСК -->
+        <section class="search" id="search">
+            <h2 class="search__title">Быстрый поиск по жанрам</h2>
+
+            <form class="search__form">
+
+                <label>
+                    <input
+                    type="text"
+                    class="search__input"
+                    placeholder="Выберите жанр игры..."
+                    list="genres">
+                </label>
+
+                <datalist id="genres">
+                    <option value="Экшен"></option>
+                    <option value="Приключения"></option>
+                    <option value="RPG"></option>
+                    <option value="Стратегии"></option>
+                    <option value="Симуляторы"></option>
+                    <option value="Головоломки"></option>
+                    <option value="Спортивные"></option>
+                    <option value="Гонки"></option>
+                </datalist>
+
+                <button type="submit" class="search__button">Найти</button>
+            </form>
+        </section>
+
+        <!-- ПРЕИМУЩЕСТВА -->
+        <section class="advantages">
+            <h2 class="advantages__title">Почему выбирают нас?</h2>
+
+            <div class="advantages__grid">
+
+                <!-- ПРЕИМУЩЕСТВО 1 -->
+                <div class="advantages__item">
+                    <div class="advantages__icon">
+                        <svg width="60" height="60">
+                            <circle cx="30" cy="30" r="25" fill="#6C63FF" />
+                            <text x="30" y="38" fill="white" font-size="30">💰</text>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__subtitle">Привлекательные цены</h3>
+                    <p class="advantages__description">Лучшие цены на рынке игр!</p>
+                </div>
+
+                <!-- ПРЕИМУЩЕСТВО 2 -->
+                <div class="advantages__item">
+                    <div class="advantages__icon">
+                        <svg width="60" height="60">
+                            <circle cx="30" cy="30" r="25" fill="#6C63FF" />
+                            <text x="30" y="38" fill="white" font-size="30">🎁</text>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__subtitle">Ежемесячные акции</h3>
+                    <p class="advantages__description">Скидки до 70% каждый месяц!</p>
+                </div>
+
+                <!-- ПРЕИМУЩЕСТВО 3 -->
+                <div class="advantages__item">
+                    <div class="advantages__icon">
+                        <svg width="60" height="60">
+                            <circle cx="30" cy="30" r="25" fill="#6C63FF" />
+                            <text x="30" y="38" fill="white" font-size="30">🎧</text>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__subtitle">Поддержка клиентов</h3>
+                    <p class="advantages__description">Круглосуточная поддержка и помощь при возникновении вопросов!</p>
+                </div>
+
+                <!-- ПРЕИМУЩЕСТВО 4 -->
+                <div class="advantages__item">
+                    <div class="advantages__icon">
+                        <svg width="60" height="60">
+                            <circle cx="30" cy="30" r="25" fill="#6C63FF" />
+                            <text x="30" y="38" fill="white" font-size="30">⚡</text>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__subtitle">Безопасные платежи</h3>
+                    <p class="advantages__description">Ваши данные защищены с помощью современных технологий шифрования!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОПУЛЯРНЫЕ ИГРЫ -->
+        <section class="games">
+            <h2 class="games__title">Популярные игры</h2>
+        
+            <div class="games__grid">
+        
+                <!--КАРТОЧКА ИГРА 1 -->
+                <article class="game-card">
+                    <a href="catalog.html" class="game-card__link">
+                        <img class="games__image" src="/img/games/game1.png" alt="game1">
+        
+                        <div class="game-card_content">
+                            <h3 class="game-card__title">Counter-Strike 2</h3>
+                            <p class="game-card__genre">Жанр: Экшен</p>
+                            <p class="game-card__dev">Valve</p>
+        
+                            <div class="game-card__rating">
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                            </div>
+        
+                            <p class="games__price">Бесплатно</p>
+                            <button class="game-card__button">В каталог</button>
+                        </div>
+                    </a>
+                </article>
+        
+                <!--КАРТОЧКА ИГРА 2 -->
+                <article class="game-card">
+                    <a href="catalog.html" class="game-card__link">
+                        <img class="games__image" src="/img/games/game2.png" alt="game2">
+        
+                        <div class="game-card_content">
+                            <h3 class="game-card__title">ARC Raiders</h3>
+                            <p class="game-card__genre">Жанр: Экшен</p>
+                            <p class="game-card__dev">Embark Studios</p>
+        
+                            <div class="game-card__rating">
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                            </div>
+        
+                            <p class="games__price">3700 ₽</p>
+                            <button class="game-card__button">В каталог</button>
+                        </div>
+                    </a>
+                </article>
+        
+                <!--КАРТОЧКА ИГРА 3 -->
+                <article class="game-card">
+                    <a href="catalog.html" class="game-card__link">
+                        <img class="games__image" src="/img/games/game3.png" alt="game3">
+        
+                        <div class="game-card_content">
+                            <h3 class="game-card__title">Clair Obscur: Expedition 33</h3>
+                            <p class="game-card__genre">Жанр: RPG</p>
+                            <p class="game-card__dev">Sandfall Interactive</p>
+                        
+                            <div class="game-card__rating">
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                            </div>
+                            <p class="games__price">4650 ₽</p>
+                            <button class="game-card__button">В каталог</button>
+                        </div>
+                    </a>
+                </article>
+        
+                <!--КАРТОЧКА ИГРА 4 -->
+                <article class="game-card">
+                    <a href="catalog.html" class="game-card__link">
+                        <img class="games__image" src="/img/games/game4.png" alt="game4">
+        
+                        <div class="game-card_content">
+                            <h3 class="game-card__title">Battlefield™ 6</h3>
+                            <p class="game-card__genre">Жанр: Экшен</p>
+                            <p class="game-card__dev">Battlefield Studios</p>
+
+                            <div class="game-card__rating">
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                            </div>
+        
+                            <p class="games__price">6515 ₽</p>
+                            <button class="game-card__button">В каталог</button>
+                        </div>
+                    </a>
+                </article>
+
+                <!--КАРТОЧКА ИГРА 5 -->
+                <article class="game-card">
+                    <a href="catalog.html" class="game-card__link">
+                        <img class="games__image" src="/img/games/game5.png" alt="game5">
+        
+                        <div class="game-card_content">
+                            <h3 class="game-card__title">Baldur's Gate 3</h3>
+                            <p class="game-card__genre">Жанр: RPG</p>
+                            <p class="game-card__dev">Larian Studios</p>
+        
+                            <div class="game-card__rating">
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                                <span class="star star--filled">★</span>
+                            </div>
+        
+                            <p class="games__price">5575 ₽</p>
+                            <button class="game-card__button">В каталог</button>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!--ПАРТНЕРЫ-->
+        <section class="partners">
+            <h2 class="partners__title">Наши партнеры</h2>
+
+            <div class="partners__grid">
+                <div class="partners__item">
+                    <img src="/img/logos/Steam.png" alt="Steam" class="partners__logo">
+                </div>
+
+                <div class="partners__item">
+                    <img src="/img/logos/EpicGames.png" alt="Epic Games" class="partners__logo">
+                </div>
+
+                <div class="partners__item">
+                    <img src="/img/logos/Ubisoft.png" alt="Ubisoft" class="partners__logo">
+                </div>
+
+                <div class="partners__item">
+                    <img src="/img/logos/EA.png" alt="EA Games" class="partners__logo">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--ПОДВАЛ-->
+    <footer class="footer">
+        <div class="footer__container">
+
+            <!--КОНТАКТЫ-->
+            <div class="footer__contacts">
+                <h3 class="footer__title">Контакты</h3>
+                <p class="footer__contact">
+                    <span>Телефон</span>
+                    <a href="tel:88009995599">8-800-999-55-99</a>
+                </p>
+
+                <p class="footer__contact">
+                    <span>E-mail</span>
+                    <a href="mailto:best@games.ru">best@games.ru</a>
+                </p>
+            </div>
+
+            <!--ИНФОРМАЦИЯ-->
+            <div class="footer__info">
+                <h3 class="footer_title">Информация</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Клиентам</a></li>
+                    <li><a href="#" class="footer__link">Партнерам</a></li>
+                    <li><a href="#" class="footer__link">О нас</a></li>
+                    <li><a href="#" class="footer__link">контакты</a></li>
+                </ul>
+            </div>
+
+            <!--НАВИГАЦИЯ-->
+            <div class="footer__navigation">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__list">
+                    <li><a href="index.html" class="footer__link">Главная</a></li>
+                    <li><a href="register.html" class="footer__link">Регистрация</a></li>
+                    <li><a href="login.html" class="footer__link">Авторизация</a></li>
+                    <li><a href="profile.html" class="footer__link">Личный кабинет</a></li>
+                    <li><a href="#search" class="footer__link">Поиск</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ТЕМНАЯ ТЕМЫ */
+:root {
+    /* Цвета */
+    --primary-color: #6C63FF;        /* Основной фиолетовый */
+    --secondary-color: #FF6584;      /* Акцентный розовый */
+    --bg-color: #0F0F1E;             /* Темный фон */
+    --bg-secondary: #1A1A2E;         /* Вторичный фон */
+    --text-color: #FFFFFF;           /* Белый текст */
+    --text-secondary: #B0B0B0;       /* Серый текст */
+    --card-bg: #16213E;              /* Фон карточек */
+    --border-color: #2A2A3E;         /* Цвет границ */
+
+    /* Размеры */
+    --container-width: 1200px;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+
+    /* Отступы */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+}
+
+/* База body */
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* Удаление подчеркивания у ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+/* Удаление маркеров у списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Адаптация изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Кнопки */
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+/* ===================================
+   КОНТЕЙНЕРЫ
+   =================================== */
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* Заголовки секций */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+/* Утилиты для видимости */
+.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* ===================================
+   HEADER
+   =================================== */
+
+.header {
+    background-color: var(--bg-secondary);
+    padding: var(--spacing-sm) 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ЛОГОТИП */
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    width:80px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo__text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* НАВИГАЦИЯ */
+.nav {
+    position: relative;
+}
+
+/* БУРГЕР-МЕНЮ (только для мобильной) */
+.nav__burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.nav__burger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+/* Анимация бургера при открытии */
+.nav__burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.nav__burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav__burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* СПИСОК НАВИГАЦИИ */
+.nav__list {
+    display: none; /* Скрыто на мобильной */
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.nav__item {
+    text-align: center;
+}
+
+.nav__link {
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.nav__link:hover {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+
+/* Кнопка "Войти" */
+.nav__link--button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.nav__link--button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
