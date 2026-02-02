@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
+            <img src="img/logo.png" alt="BestGamesLogo" class="header__logo">
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#search" class="nav__link">Поиск</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="login.html" class="nav__link">Войти</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="profile.html" class="nav__link">Личный кабинет</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="catalog.html" class="nav__link">Каталог игр</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__burger burger">
+                <span class="burger__line">Поиск</span>
+                <span class="burger__line">Войти</span>
+                <span class="burger__line">Личный кабинет</span>
+                <span class="burger__line">Каталог игр</span>
+            </button>
+        </div>
+    </header>
+
+<!-- SLIDER -->
+    <section class="slider">
+        <div class="slider__container">
+            <div class="slider__wrapper">
+                <div class="slider__slide clider__slide--active">
+                    <div class="slider_content">
+                        <h2 class="slider__title">Cyberpunk 2077</h2>
+                        <p class="slider__price">4321 ₽</p>
+                        <a href="#" class="slider__button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="slider__slide clider__slide--active">
+                    <div class="slider_content">
+                        <h2 class="slider__title">Witcher 3</h2>
+                        <p class="slider__price">3210 ₽</p>
+                        <a href="#" class="slider__button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="slider__slide clider__slide--active">
+                    <div class="slider_content">
+                        <h2 class="slider__title">GTA 5</h2>
+                        <p class="slider__price">2100 ₽</p>
+                        <a href="#" class="slider__button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider__indenticators">
+                <span class="slider__indenticator slider__indenticator--active"></span>
+                <span class="slider__indenticator slider__indenticator--active"></span>
+                <span class="slider__indenticator slider__indenticator--active"></span>
+            </div>
+        </div>
+    </section>
+
+<!-- SEARCH -->
+    <section class="search" id="search">
+        <div class="search_container">
+            <h2 class="search__title">Поиск по жанрам</h2>
+            <input type="text"
+            class="search__input"
+            placeholder="Введите жанр игры..."
+            list="genres"
+            >
+            <datalist id="genres">
+                <option value="RPG"></option>
+                <option value="Action"></option>
+                <option value="Shooter"></option>
+                <option value="Survivor"></option>
+            </datalist>
+            <button type="submit" class="search__button">Найти</button>
+        </div>
+    </section>
+
+<!-- GAMES -->
+    <section class="games">
+        <div class="games__container">
+            <h2>Популярные игры</h2>
+            <div class="cart__grid">
+
+                <article class="cart">
+                    <div class="cart__image">
+                        <img src="/img" alt="GameLogo">
+                    </div>
+                    <div class="cart__content">
+                        <h3 class="cart__title"></h3>
+                        <p class="cart__devolopers"></p>
+                        <p class="cart__genre"></p>
+                        <div class="card__rating">
+                            <span class="card_rating--star"></span>
+                        </div>
+                        <p class="card__price"></p>
+                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                    </div>
+                </article>
+
+                <article class="cart">
+                    <div class="cart__image">
+                        <img src="/img" alt="GameLogo">
+                    </div>
+                    <div class="cart__content">
+                        <h3 class="cart__title"></h3>
+                        <p class="cart__devolopers"></p>
+                        <p class="cart__genre"></p>
+                        <div class="card__rating">
+                            <span class="card_rating--star"></span>
+                        </div>
+                        <p class="card__price"></p>
+                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                    </div>
+                </article>
+
+                <article class="cart">
+                    <div class="cart__image">
+                        <img src="/img" alt="GameLogo">
+                    </div>
+                    <div class="cart__content">
+                        <h3 class="cart__title"></h3>
+                        <p class="cart__devolopers"></p>
+                        <p class="cart__genre"></p>
+                        <div class="card__rating">
+                            <span class="card_rating--star"></span>
+                        </div>
+                        <p class="card__price"></p>
+                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                    </div>
+                </article>
+
+                <article class="cart">
+                    <div class="cart__image">
+                        <img src="/img" alt="GameLogo">
+                    </div>
+                    <div class="cart__content">
+                        <h3 class="cart__title"></h3>
+                        <p class="cart__devolopers"></p>
+                        <p class="cart__genre"></p>
+                        <div class="card__rating">
+                            <span class="card_rating--star"></span>
+                        </div>
+                        <p class="card__price"></p>
+                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                    </div>
+                </article>
+
+                <article class="cart">
+                    <div class="cart__image">
+                        <img src="/img" alt="GameLogo">
+                    </div>
+                    <div class="cart__content">
+                        <h3 class="cart__title"></h3>
+                        <p class="cart__devolopers"></p>
+                        <p class="cart__genre"></p>
+                        <div class="card__rating">
+                            <span class="card_rating--star"></span>
+                        </div>
+                        <p class="card__price"></p>
+                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer__column">
+                <h4 class="footer__title">Контакты</h4>
+                <p class="footer__text">Телефон: 8-800-999-55-99</p>
+                <p class="footer__text">E-mail: best@games.ru</p>
+            </div>
+            <div class="footer__column">
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__list">
+                    <li class="foter__item"><a href="#" class="footer__link">Главная</a></li>
+                    <li class="foter__item"><a href="#" class="footer__link"></a>Регистрация</li>
+                    <li class="foter__item"><a href="#" class="footer__link"></a>Авторизация</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
