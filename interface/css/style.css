@@ -1,3 +1,4 @@
+/* BASE */
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +35,11 @@ ul {
     --color-star: #ffd700;
 }
 
+
+/* ============================================
+MAIN
+============================================ */
+
 /* HEADER */
 .header {
     background-color: var(--color-secondary);
@@ -44,7 +50,6 @@ ul {
 }
 
 .header__container {
-    max-width: 1200px;
     margin: 0;
     padding: 0 20px;
     display: flex;
@@ -71,6 +76,14 @@ ul {
     transition: color 0.3s;
 }
 
+.nav__item{
+    font-size: 20px;
+}
+
+.nav__auth {
+    color: var(--color-accent);
+}
+
 /* Мобилка */
 .header__burger {
     display: flex;
@@ -92,7 +105,7 @@ ul {
 
 /* SLIDER */
 .slider {
-    padding: 40px 0;
+    padding: 20px 0;
     background: var(--color-dark);
 }
 
@@ -169,7 +182,7 @@ ul {
 
 /* SEARCH */
 .search {
-    padding: 40px 0;
+    padding: 20px 20px;
     background: var(--color-secondary);
 }
 
@@ -330,12 +343,12 @@ ul {
 /* FOOTER */
 .footer {
     background: var(--color-secondary);
-    padding: 40px 0;
+    padding: 40px 40px;
     margin-top: 60px;
 }
 
 .footer__container {
-    max-width: 1200px;
+    display: flex;
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
@@ -345,13 +358,13 @@ ul {
 
 .footer__title {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     color: var(--color-accent);
 }
 
 .footer__text {
     color: var(--color-text-secondary);
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .footer__list {
@@ -382,23 +395,19 @@ ul {
         display: block;
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 1: Grid карточек 1 колонку */
     .games__grid {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 2: Footer в 1 колонку */
     .footer__container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 3: Форма поиска шире */
     .games__container {
         display: grid;
         justify-content: center;
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 4: Слайдер выше */
     .slider__slide {
         min-height: 300px;
     }
@@ -406,35 +415,30 @@ ul {
 
 /* ПЛАНШЕТ - 768px */
 @media (min-width: 768px) {
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 1: Grid карточек 2 колонки */
     .games__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 2: Footer в 2 колонки */
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 3: Форма поиска шире */
     .search__form {
         max-width: 700px;
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 4: Слайдер выше */
+
     .slider__slide {
         min-height: 350px;
     }
 }
 
 /* ДЕСКТОП - 1920px */
-@media (min-width: 1000px) {
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 1: Grid карточек 3 колонки */
+@media (min-width: 1320px) {
     .games__grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 2: Навигация показывается, бургер скрывается */
     .header__nav {
         display: block;
     }
@@ -443,12 +447,10 @@ ul {
         display: none;
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 3: Footer в 3 колонки */
     .footer__container {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* СТРУКТУРНОЕ ИЗМЕНЕНИЕ 4: Слайдер на полную высоту */
     .slider__slide {
         min-height: 400px;
     }

@@ -10,14 +10,16 @@
 <!-- HEADER -->
     <header class="header">
         <div class="header__container">
-            <img src="img/logo.png" alt="BestGamesLogo" class="header__logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="BestGamesLogo" class="header__logo">
+            </a>
             <nav class="header__nav nav">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#search" class="nav__link">Поиск</a>
                     </li>
                     <li class="nav__item">
-                        <a href="login.html" class="nav__link">Войти</a>
+                        <a href="login.html" class="nav__link nav__auth">Войти</a>
                     </li>
                     <li class="nav__item">
                         <a href="profile.html" class="nav__link">Личный кабинет</a>
@@ -94,95 +96,121 @@
 <!-- GAMES -->
     <section class="games">
         <div class="games__container">
-            <h2>Популярные игры</h2>
-            <div class="cart__grid">
+            <h2 class="games__title">Популярные игры</h2>
+            <div class="games__grid">
 
-                <article class="cart">
-                    <div class="cart__image">
-                        <img src="/img" alt="GameLogo">
+            <!-- Карточка 1 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <div class="card__image card__image--placeholder"></div>
                     </div>
-                    <div class="cart__content">
-                        <h3 class="cart__title"></h3>
-                        <p class="cart__devolopers"></p>
-                        <p class="cart__genre"></p>
+                    <div class="card__content">
+                        <h3 class="card__title">The Witcher 3</h3>
+                        <p class="card__genre">RPG</p>
+                        <p class="card__developer">CD Projekt Red</p>
                         <div class="card__rating">
-                            <span class="card_rating--star"></span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star">★</span>
                         </div>
-                        <p class="card__price"></p>
-                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                        <p class="card__price">1499 ₽</p>
+                        <a href="#" class="card__button">В каталог</a>
                     </div>
                 </article>
 
-                <article class="cart">
-                    <div class="cart__image">
-                        <img src="/img" alt="GameLogo">
+            <!-- Карточка 2 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <div class="card__image card__image--placeholder"></div>
                     </div>
-                    <div class="cart__content">
-                        <h3 class="cart__title"></h3>
-                        <p class="cart__devolopers"></p>
-                        <p class="cart__genre"></p>
+                    <div class="card__content">
+                        <h3 class="card__title">Cyberpunk 2077</h3>
+                        <p class="card__genre">Action RPG</p>
+                        <p class="card__developer">CD Projekt Red</p>
                         <div class="card__rating">
-                            <span class="card_rating--star"></span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
                         </div>
-                        <p class="card__price"></p>
-                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                        <p class="card__price">1999 ₽</p>
+                        <a href="#" class="card__button">В каталог</a>
                     </div>
                 </article>
 
-                <article class="cart">
-                    <div class="cart__image">
-                        <img src="/img" alt="GameLogo">
+            <!-- Карточка 3 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <div class="card__image card__image--placeholder"></div>
                     </div>
-                    <div class="cart__content">
-                        <h3 class="cart__title"></h3>
-                        <p class="cart__devolopers"></p>
-                        <p class="cart__genre"></p>
+                    <div class="card__content">
+                        <h3 class="card__title">GTA V</h3>
+                        <p class="card__genre">Action</p>
+                        <p class="card__developer">Rockstar Games</p>
                         <div class="card__rating">
-                            <span class="card_rating--star"></span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star">★</span>
                         </div>
-                        <p class="card__price"></p>
-                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                        <p class="card__price">1299 ₽</p>
+                        <a href="#" class="card__button">В каталог</a>
                     </div>
                 </article>
 
-                <article class="cart">
-                    <div class="cart__image">
-                        <img src="/img" alt="GameLogo">
+                <!-- Карточка 4 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <div class="card__image card__image--placeholder"></div>
                     </div>
-                    <div class="cart__content">
-                        <h3 class="cart__title"></h3>
-                        <p class="cart__devolopers"></p>
-                        <p class="cart__genre"></p>
+                    <div class="card__content">
+                        <h3 class="card__title">Red Dead Redemption 2</h3>
+                        <p class="card__genre">Action</p>
+                        <p class="card__developer">Rockstar Games</p>
                         <div class="card__rating">
-                            <span class="card_rating--star"></span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
                         </div>
-                        <p class="card__price"></p>
-                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                        <p class="card__price">2499 ₽</p>
+                        <a href="#" class="card__button">В каталог</a>
                     </div>
                 </article>
 
-                <article class="cart">
-                    <div class="cart__image">
-                        <img src="/img" alt="GameLogo">
+            <!-- Карточка 5 -->
+                <article class="card">
+                    <div class="card__image-wrapper">
+                        <div class="card__image card__image--placeholder"></div>
                     </div>
-                    <div class="cart__content">
-                        <h3 class="cart__title"></h3>
-                        <p class="cart__devolopers"></p>
-                        <p class="cart__genre"></p>
+                    <div class="card__content">
+                        <h3 class="card__title">Elden Ring</h3>
+                        <p class="card__genre">RPG</p>
+                        <p class="card__developer">FromSoftware</p>
                         <div class="card__rating">
-                            <span class="card_rating--star"></span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
+                            <span class="card__star card__star--filled">★</span>
                         </div>
-                        <p class="card__price"></p>
-                        <a href="catalog.html" class="card__incatalog">Добавить в каталог</a>
+                        <p class="card__price">2999 ₽</p>
+                        <a href="#" class="card__button">В каталог</a>
                     </div>
                 </article>
+
             </div>
         </div>
     </section>
 
 <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer_container">
+        <div class="footer__container">
             <div class="footer__column">
                 <h4 class="footer__title">Контакты</h4>
                 <p class="footer__text">Телефон: 8-800-999-55-99</p>
